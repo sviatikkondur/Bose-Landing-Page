@@ -1,0 +1,222 @@
+/* #region default */
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html{
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Inter', sans-serif; 
+    scroll-behavior: smooth;
+    color: #292929;
+    font-size: 16px;
+    line-height: 140%;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* #endregion */
+/* #region header */
+.header_top{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header{
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 64px 120px;
+    background-image: url(images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header_title{
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+}
+/* #endregion */
+/* #region menu */
+
+.main{
+    padding: 120px;
+    background-color: #FFF;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 500ms;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: rgba(232, 239, 249, 1);
+    padding: 64px 120px;
+}
+
+.menu:target{
+    transform: translateX(0);
+}
+
+.menu_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nav_link{
+    color: #292929;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* #endregion */
+/* #region recommended */
+.recommended{
+    margin-bottom: 120px;
+}
+
+.recommended_title{
+    margin-bottom: 64px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+}
+
+.recommended_products{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+/* #endregion */
+/* #region products */
+.product{
+    flex-basis: 324px;
+}
+
+#product_title{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.product_photo{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+
+.product_category{
+    margin-bottom: 12px;
+}
+.product_price{
+    font-weight: bold;
+}
+/* #endregion */
+/* #region categories */
+.categories{
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+/* #endregion */
+/* #region categories content */
+.category{
+    margin-bottom: 64px;
+}
+.categories_title{
+    margin-bottom: 64px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+}
+.category_photos{
+    display: flex;
+    gap: 3%;
+    margin-bottom: 16px;
+}
+
+.photo-wide{
+    width: 65%;
+}
+.photo-square{
+    width: 32%;
+}
+/* #endregion */
+/* #region how to buy */
+
+.how_to_buy__title{
+    flex-basis: 50%;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+}
+
+.how_to_buy__content{
+    flex-basis: 50%;
+}
+
+.how_to_buy{
+    margin: 0 auto;
+    max-width: 1020px;
+    display: flex;
+    gap: 24px;
+}
+
+.how_to_buy__benefits{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* #endregion */
+.footer{
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    height: 460px;
+    background-image: url(images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
