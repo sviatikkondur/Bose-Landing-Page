@@ -55,6 +55,12 @@ html{
     background-color: #FFF;
 }
 
+@media (max-width: 640px) {
+    .main{
+        padding: 40px;
+    }
+}
+
 .menu{
     position: fixed;
     top: 0;
@@ -116,6 +122,12 @@ html{
     display: flex;
     justify-content: center;
     gap: 24px;
+}
+
+@media (max-width: 640px) {
+    .recommended_products{
+        flex-direction: column;
+    }
 }
 /* #endregion */
 /* #region products */
